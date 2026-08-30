@@ -17,8 +17,8 @@ export default function Nav() {
     <nav className="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-container items-center justify-between px-6 py-4">
         <a href="#top" className="font-display text-sm font-semibold text-ink">
-          SP<span className="text-cyan">.</span>
-        </a>
+          SP{" "}
+       </a>
 
         <ul className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
@@ -48,7 +48,14 @@ export default function Nav() {
           onClick={() => setOpen((v) => !v)}
           className="text-ink md:hidden"
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          >
             {open ? (
               <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
             ) : (
@@ -72,7 +79,11 @@ export default function Nav() {
             </li>
           ))}
           <li>
-            <a href="#contact" className="block px-6 py-4 text-center font-mono text-sm text-cyan" onClick={() => setOpen(false)}>
+            <a
+              href="#contact"
+              className="block px-6 py-4 text-center font-mono text-sm text-cyan"
+              onClick={() => setOpen(false)}
+            >
               Say hello →
             </a>
           </li>

@@ -52,8 +52,8 @@ export default function Hero() {
             Building digital experiences with code, AI &amp; cloud.
           </h1>
           <p className="mt-5 max-w-[46ch] text-[1.05rem] leading-relaxed text-muted">
-            I&apos;m {profile.name} — a full-stack developer in training who
-            turns rough ideas into working software, then designs the interface
+            I&apos;m {profile.name} ~ a full-stack developer in training who turns
+            rough ideas into working software, then designs the interface
             myself.
           </p>
 
