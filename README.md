@@ -1,106 +1,52 @@
-# Sivaraja Pratheep — Portfolio
+# Sivaraja Pratheep — Portfolio v2
 
-A single-page personal portfolio and link hub, built with plain HTML, CSS, and JavaScript. No frameworks, no build step — clone it and open `index.html`.
+Rebuild of the portfolio in Next.js 14 (App Router), TypeScript, and Tailwind CSS, following the
+"Portfolio v2" redesign plan: a terminal-style hero signature, a categorized tech stack, project
+case studies with stats, a chronological education/experience timeline, certifications, a live
+GitHub pulse panel, and a stronger contact call-to-action.
 
-🔗 **Live demo:** _add your GitHub Pages URL here once deployed_
-
----
-
-## Preview
-
-A clean, modern, single-accent blue theme with a sticky nav, scroll-reveal sections, and a responsive layout down to mobile.
-
----
-
-## Sections
-
-| Section | What it covers |
-|---|---|
-| **Hero** | Name, role, short intro, resume download |
-| **About** | Background, university, focus areas |
-| **Skills** | Development, Cloud & AI, and Design tooling |
-| **Work** | Featured projects with links |
-| **Credentials** | Certificates and recognitions |
-| **Elsewhere** | Links to every other profile (LinkedIn, GitHub, socials, etc.) |
-| **Contact** | Email and LinkedIn call-to-action |
-
----
-
-## Tech stack
-
-- **HTML5** — semantic structure
-- **CSS3** — custom properties, grid/flexbox, no framework
-- **Vanilla JavaScript** — mobile nav toggle, scroll-reveal via `IntersectionObserver`
-- **Font Awesome** (via CDN) — icons
-- **Google Fonts** — Space Grotesk (display) + Inter (body)
-
----
-
-## Project structure
-
-```
-portfolio-site/
-├── index.html      # all page content/sections
-├── style.css        # design tokens + styles
-├── script.js         # nav toggle + scroll-reveal
-├── resume.pdf         # downloadable resume
-└── images/
-    └── logo.jpeg        # profile photo
-```
-
----
-
-## Running locally
-
-No build step required.
+## Getting started
 
 ```bash
-git clone <this-repo-url>
-cd portfolio-site
-# then just open index.html in your browser
+npm install
+npm run dev
 ```
 
-Or serve it locally for a closer-to-production feel:
+Open http://localhost:3000.
+
+## Content
+
+All personal content (skills, projects, journey, certifications, links) lives in one place:
+`lib/data.ts`. Edit that file to update copy without touching components.
+
+- `public/images/photo.jpg` — your profile photo (used in the hero).
+- `public/resume.pdf` — the file behind the "Download resume" button.
+
+## GitHub pulse section
+
+`components/GithubPulse.tsx` fetches your public repo count, followers, and four most recently
+updated repos directly from the public GitHub REST API in the browser — no token needed, no
+build-time step. It fails gracefully (with a link straight to your GitHub profile) if the API is
+unreachable or rate-limited.
+
+## Deploying
+
+This project is configured for **static export** (`output: "export"` in `next.config.mjs`), so it
+deploys the same way your previous site did — as a folder of static files:
 
 ```bash
-python3 -m http.server 8000
-# visit http://localhost:8000
+npm run build
 ```
 
----
+This produces an `out/` folder. Push that to GitHub Pages (or any static host). If you'd rather
+deploy to Vercel and use Next.js's full server features, delete the `output: "export"` line from
+`next.config.mjs` first.
 
-## Deploying to GitHub Pages
+## Structure
 
-1. Push this folder's contents to a GitHub repo (e.g. `portfolio`).
-2. Go to **Settings → Pages** in the repo.
-3. Under **Source**, select the branch (usually `main`) and root folder.
-4. Save — your site will be live at `https://<username>.github.io/<repo-name>/`.
-
----
-
-## Customizing
-
-- **Colors & type** — edit the CSS custom properties at the top of `style.css` under `:root`.
-- **Content** — edit the text directly in `index.html`; each section is clearly commented.
-- **Links** — update the `href` values in the *Work* and *Elsewhere* sections.
-- **Resume** — replace `resume.pdf` with your own file (same filename, or update the link in `index.html`).
-- **Photo** — replace `images/logo.jpeg` with your own image (same filename, or update the `src` in `index.html`).
-
----
-
-## Future improvements
-
-- 🌗 Light mode toggle
-- 📊 Project case-study pages
-- 📬 Working contact form (e.g. via Formspree)
-- 🧭 Active-section highlighting in the nav on scroll
-
----
-
-## License
-
-Open-source under the MIT License. Feel free to fork and adapt for your own portfolio.
-
----
-
-Built by **Sivaraja Pratheep**.
+```
+app/            Root layout, global styles, the single home page
+components/     One component per section (Hero, TechStack, Projects, Journey, ...)
+lib/data.ts     All content: profile, skills, projects, journey, certifications, links
+public/         Static assets: your photo and resume
+```
