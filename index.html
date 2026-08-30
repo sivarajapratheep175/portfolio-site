@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Sivaraja Pratheep — Computer Science undergraduate at the University of Jaffna, building in web, cloud and AI." />
+<title>Sivaraja Pratheep — Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">Sivaraja Pratheep</a>
+    <ul class="nav-links" id="navLinks" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#elsewhere">Elsewhere</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="images/logo.jpeg" alt="" class="hero-avatar" width="96" height="96" />
+      <p class="eyebrow">Jaffna, Sri Lanka &middot; Open to opportunities</p>
+      <h1>Sivaraja Pratheep</h1>
+      <p class="hero-role">Computer Science Undergraduate &middot; Aspiring Full-Stack Developer</p>
+      <p class="hero-desc">
+        I study Computer Science at the University of Jaffna and build practical projects across
+        the web, cloud, and AI &mdash; then design the interface myself.
+      </p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">See my work</a>
+        <a href="resume.pdf" download class="btn btn-secondary">
+          <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> Download resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="eyebrow">About</p>
+    <h2>A little about me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a <strong>B.Sc. Computer Science</strong> undergraduate at the
+          <strong>University of Jaffna</strong>, and a graduate of Methodist Central College.
+          My focus sits at the intersection of web development, cloud platforms, and applied AI &mdash;
+          I like taking an idea from a rough sketch to something people can actually click on.
+        </p>
+        <p>
+          Outside the code editor, I work across the Adobe suite &mdash; Photoshop, Illustrator,
+          InDesign, and Premiere Pro &mdash; which keeps the interfaces I build a little more
+          considered than "just functional."
+        </p>
+      </div>
+      <ul class="fact-list" role="list">
+        <li><span>Based in</span><strong>Jaffna, Sri Lanka</strong></li>
+        <li><span>Studying</span><strong>B.Sc. Computer Science, UoJ</strong></li>
+        <li><span>Focus</span><strong>Web &middot; Cloud &middot; AI</strong></li>
+        <li><span>Also does</span><strong>Graphic &amp; video design</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="eyebrow">Skills</p>
+    <h2>What I build with</h2>
+    <div class="skills-cols">
+      <div class="skills-col">
+        <h3>Development</h3>
+        <ul class="tag-list" role="list">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>Python</li>
+          <li>MySQL</li><li>Git &amp; GitHub</li><li>Salesforce (Apex &amp; LWC)</li>
+        </ul>
+      </div>
+      <div class="skills-col">
+        <h3>Cloud &amp; AI</h3>
+        <ul class="tag-list" role="list">
+          <li>Cloud fundamentals</li><li>AWS basics</li><li>AI integration</li>
+          <li>Voice-driven interfaces</li>
+        </ul>
+      </div>
+      <div class="skills-col">
+        <h3>Design</h3>
+        <ul class="tag-list" role="list">
+          <li>Photoshop</li><li>Illustrator</li><li>InDesign</li>
+          <li>Premiere Pro</li><li>Figma</li><li>Canva</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <p class="eyebrow">Selected work</p>
+    <h2>Things I've shipped</h2>
+    <div class="work-grid">
+
+      <article class="work-card">
+        <i class="fa-solid fa-seedling work-icon" aria-hidden="true"></i>
+        <h3>FarmIntel AI</h3>
+        <p>An AI-powered farming assistant delivering real-time insights, crop-health analysis, and Tamil voice interaction in a single dashboard.</p>
+        <ul class="tag-list tag-list-sm" role="list">
+          <li>JavaScript</li><li>AI Integration</li><li>Voice Recognition</li>
+        </ul>
+        <a href="https://github.com/sivarajapratheep175/farmintel-Ai-app" target="_blank" rel="noopener noreferrer" class="work-link">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </article>
+
+      <article class="work-card">
+        <i class="fa-solid fa-person-walking work-icon" aria-hidden="true"></i>
+        <h3>Safe Walk App</h3>
+        <p>A mobile app aimed at pedestrian safety &mdash; real-time alerts and guidance for people navigating potentially risky situations.</p>
+        <ul class="tag-list tag-list-sm" role="list">
+          <li>JavaScript</li><li>AI Integration</li><li>Voice Recognition</li>
+        </ul>
+        <a href="https://github.com/sivarajapratheep175/safewalk-app" target="_blank" rel="noopener noreferrer" class="work-link">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+        </a>
+      </article>
+
+      <article class="work-card">
+        <i class="fa-solid fa-globe work-icon" aria-hidden="true"></i>
+        <h3>Link-in-bio Hub</h3>
+        <p>A fast, single-page directory that pulls every social and professional profile into one clean landing page.</p>
+        <ul class="tag-list tag-list-sm" role="list">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+        <a href="https://sivarajapratheep175.github.io/PersonalWebPresence/" target="_blank" rel="noopener noreferrer" class="work-link">
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View live
+        </a>
+      </article>
+
+      <article class="work-card">
+        <i class="fa-solid fa-swatchbook work-icon" aria-hidden="true"></i>
+        <h3>Design Portfolio</h3>
+        <p>A running collection of graphic and layout work made in the Adobe suite &mdash; posters, logos, and social assets.</p>
+        <ul class="tag-list tag-list-sm" role="list">
+          <li>Photoshop</li><li>Illustrator</li><li>InDesign</li>
+        </ul>
+        <a href="https://drive.google.com/drive/folders/1eHkSTsvYTT5zWBJ8rifmPmQX0lucWimt?usp=sharing" target="_blank" rel="noopener noreferrer" class="work-link">
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> View portfolio
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section class="section" id="credentials">
+    <p class="eyebrow">Credentials</p>
+    <h2>Certificates &amp; recognition</h2>
+    <ul class="cred-list" role="list">
+      <li class="cred-item">
+        <i class="fa-brands fa-hackerrank" aria-hidden="true"></i>
+        <span class="cred-title">HackerRank &mdash; Java (Basic)</span>
+        <a href="https://www.hackerrank.com/certificates/iframe/ee518ca7fd75" target="_blank" rel="noopener noreferrer" aria-label="View certificate"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </li>
+      <li class="cred-item">
+        <i class="fa-brands fa-hackerrank" aria-hidden="true"></i>
+        <span class="cred-title">HackerRank &mdash; JavaScript (Basic)</span>
+        <a href="https://www.hackerrank.com/certificates/iframe/780c5743c20f" target="_blank" rel="noopener noreferrer" aria-label="View certificate"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </li>
+      <li class="cred-item">
+        <i class="fa-brands fa-hackerrank" aria-hidden="true"></i>
+        <span class="cred-title">HackerRank &mdash; CSS (Basic)</span>
+        <a href="https://www.hackerrank.com/certificates/iframe/4d4296ca4b46" target="_blank" rel="noopener noreferrer" aria-label="View certificate"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </li>
+      <li class="cred-item">
+        <i class="fa-brands fa-google" aria-hidden="true"></i>
+        <span class="cred-title">Google AI Certificate</span>
+        <i class="fa-solid fa-check status-icon" aria-hidden="true" title="Completed"></i>
+      </li>
+      <li class="cred-item">
+        <i class="fa-solid fa-code" aria-hidden="true"></i>
+        <span class="cred-title">Apex &amp; LWC Bootcamp &mdash; Cohort 01</span>
+        <i class="fa-solid fa-check status-icon" aria-hidden="true" title="Completed"></i>
+      </li>
+      <li class="cred-item">
+        <i class="fa-solid fa-users" aria-hidden="true"></i>
+        <span class="cred-title">UoJ Coders v5.0 &mdash; Certificate of Appreciation</span>
+        <i class="fa-solid fa-check status-icon" aria-hidden="true" title="Completed"></i>
+      </li>
+      <li class="cred-item">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        <span class="cred-title">YARLINSIGHT 3.0 &mdash; Summer School</span>
+        <i class="fa-solid fa-check status-icon" aria-hidden="true" title="Completed"></i>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ELSEWHERE -->
+  <section class="section" id="elsewhere">
+    <p class="eyebrow">Elsewhere</p>
+    <h2>Find me on other platforms</h2>
+    <div class="link-grid" role="list">
+      <a href="https://www.linkedin.com/in/sivarajapratheep175/" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+      <a href="https://github.com/sivarajapratheep175" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.hackerrank.com/profile/pratheep175" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-hackerrank"></i> HackerRank</a>
+      <a href="https://sivarajapratheep175.blogspot.com/" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-pen-nib"></i> Blog</a>
+      <a href="https://x.com/pratheep175" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
+      <a href="https://www.salesforce.com/trailblazer/sivarajapratheep175" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-salesforce"></i> Trailblazer</a>
+      <a href="https://www.facebook.com/pratheep.sivarajaa" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="https://www.threads.com/@sivarajapratheep175" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-threads"></i> Threads</a>
+      <a href="https://bsky.app/profile/pratheep175.bsky.social" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-cloud"></i> Bluesky</a>
+      <a href="https://www.instagram.com/sivarajapratheep175/" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://web.telegram.org/k/#@sivarajapratheep175" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-telegram"></i> Telegram</a>
+      <a href="https://www.youtube.com/@edit_tune" class="link-chip" role="listitem" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i> YouTube</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact-card">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Let's build something.</h2>
+      <p>Open to internships, collaborations, and interesting problems &mdash; in web, cloud, or AI. A short note is all it takes.</p>
+      <div class="contact-actions">
+        <a href="mailto:sivarajapratheep175@gmail.com" class="btn btn-primary">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> sivarajapratheep175@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/sivarajapratheep175/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> Message on LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <p>&copy; 2026 Sivaraja Pratheep. All rights reserved.</p>
+    <div class="social-mini" role="list">
+      <a href="https://github.com/sivarajapratheep175" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sivarajapratheep175/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:sivarajapratheep175@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
