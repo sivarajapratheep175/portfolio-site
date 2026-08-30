@@ -7,7 +7,9 @@ export default function Credentials() {
       <div className="mx-auto max-w-container px-6 py-20">
         <Reveal>
           <p className="comment-eyebrow">certificates & recognition</p>
-          <h2 className="mt-3 font-display text-[1.9rem] font-semibold text-ink">Credentials</h2>
+          <h2 className="mt-3 font-display text-[1.9rem] font-semibold text-ink">
+            Credentials
+          </h2>
         </Reveal>
 
         <Reveal>
@@ -16,7 +18,9 @@ export default function Credentials() {
               <li key={cred.title} className="flex items-center gap-4 py-4">
                 <span className="flex-1 text-[0.94rem] text-ink">
                   {cred.title}
-                  {cred.issuer ? <span className="text-muted-2"> — {cred.issuer}</span> : null}
+                  {cred.issuer ? (
+                    <span className="text-muted-2"> - {cred.issuer}</span>
+                  ) : null}
                 </span>
                 {cred.link ? (
                   <a
@@ -26,13 +30,36 @@ export default function Credentials() {
                     aria-label={`View certificate: ${cred.title}`}
                     className="text-muted transition-colors hover:text-cyan"
                   >
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                      <path d="M7 17 17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                    >
+                      <path
+                        d="M7 17 17 7M9 7h8v8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </a>
                 ) : (
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6685" strokeWidth="1.8" aria-hidden>
-                    <path d="M20 6 9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#5B6685"
+                    strokeWidth="1.8"
+                    aria-hidden
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 )}
               </li>

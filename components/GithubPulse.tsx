@@ -77,7 +77,7 @@ export default function GithubPulse() {
         {failed && (
           <Reveal>
             <p className="mt-8 text-sm text-muted-2">
-              Couldn&apos;t reach the GitHub API right now — take a look directly on{" "}
+              Couldn&apos;t reach the GitHub API right now - take a look directly on{" "}
               <a href={profile.github} className="text-cyan hover:text-ink">
                 GitHub
               </a>

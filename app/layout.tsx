@@ -24,9 +24,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sivaraja Pratheep — Portfolio",
+  title: "Sivaraja Pratheep - Portfolio",
   description:
-    "Sivaraja Pratheep — Computer Science undergraduate at the University of Jaffna, building in web, cloud and AI.",
+    "Sivaraja Pratheep - Computer Science undergraduate at the University of Jaffna, building in web, cloud and AI.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -5,7 +5,10 @@ import { useEffect, useState } from "react";
 import { profile } from "@/lib/data";
 
 const LINES = [
-  { prompt: "whoami", output: "sivaraja_pratheep — cs undergrad, university of jaffna" },
+  {
+    prompt: "whoami",
+    output: "sivaraja_pratheep - cs undergrad, University of jaffna",
+  },
   { prompt: "stack --list", output: "web · cloud · ai · salesforce" },
   { prompt: "status", output: "open to internships & collaborations" },
 ];
@@ -42,13 +45,16 @@ export default function Hero() {
 
       <div className="relative mx-auto grid max-w-container gap-14 px-6 pb-20 pt-24 md:grid-cols-[1.1fr,0.9fr] md:items-center md:pb-28 md:pt-32">
         <div>
-          <p className="comment-eyebrow">computer science undergraduate · university of jaffna</p>
+          <p className="comment-eyebrow">
+            computer science undergraduate · university of jaffna
+          </p>
           <h1 className="mt-4 font-display text-[2.6rem] font-semibold leading-[1.05] text-ink sm:text-[3.2rem]">
             Building digital experiences with code, AI &amp; cloud.
           </h1>
           <p className="mt-5 max-w-[46ch] text-[1.05rem] leading-relaxed text-muted">
-            I&apos;m {profile.name} — a full-stack developer in training who turns rough ideas into
-            working software, then designs the interface myself.
+            I&apos;m {profile.name} — a full-stack developer in training who
+            turns rough ideas into working software, then designs the interface
+            myself.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -73,20 +79,28 @@ export default function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#5B6685]/40" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#5B6685]/40" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#5B6685]/40" />
-              <span className="ml-2 font-mono text-[0.7rem] text-muted-2">status.sh</span>
+              <span className="ml-2 font-mono text-[0.7rem] text-muted-2">
+                status.sh
+              </span>
             </div>
             <div className="space-y-2.5 px-4 py-4 font-mono text-[0.8rem]">
               {LINES.map((line, i) => {
                 const isCurrent = i === lineIndex;
                 const isPast = i < lineIndex || done;
                 if (!isCurrent && !isPast) return null;
-                const output = isCurrent && !done ? line.output.slice(0, charIndex) : line.output;
+                const output =
+                  isCurrent && !done
+                    ? line.output.slice(0, charIndex)
+                    : line.output;
                 return (
                   <div key={line.prompt}>
-                    <span className="text-cyan">$</span> <span className="text-ink">{line.prompt}</span>
+                    <span className="text-cyan">$</span>{" "}
+                    <span className="text-ink">{line.prompt}</span>
                     <div className="pl-3 text-muted">
                       {output}
-                      {isCurrent && !done && <span className="animate-blink">▍</span>}
+                      {isCurrent && !done && (
+                        <span className="animate-blink">▍</span>
+                      )}
                     </div>
                   </div>
                 );
@@ -102,7 +116,9 @@ export default function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#5B6685]/40" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#5B6685]/40" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#5B6685]/40" />
-              <span className="ml-2 font-mono text-[0.7rem] text-muted-2">profile.jpg</span>
+              <span className="ml-2 font-mono text-[0.7rem] text-muted-2">
+                profile.jpg
+              </span>
             </div>
             <Image
               src="/images/photo.jpg"

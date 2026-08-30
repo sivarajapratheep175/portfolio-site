@@ -15,7 +15,7 @@ export default function Contact() {
               Let&apos;s turn it into something real.
             </p>
             <p className="mx-auto mt-4 max-w-[44ch] text-muted">
-              Open to internships, collaborations, and interesting problems — in web, cloud, or AI.
+              Open to internships, collaborations, and interesting problems - in web, cloud, or AI.
               A short note is all it takes.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
