@@ -13,13 +13,29 @@ export const techStack: { category: string; items: string[] }[] = [
   { category: "Frontend", items: ["HTML", "CSS", "JavaScript"] },
   { category: "Languages", items: ["Java", "Python"] },
   { category: "Database", items: ["MySQL"] },
-  { category: "Cloud & Tools", items: ["Cloud fundamentals", "AWS basics", "Git & GitHub"] },
+  {
+    category: "Cloud & Tools",
+    items: ["Cloud fundamentals", "AWS basics", "Git & GitHub"],
+  },
   { category: "AI", items: ["AI integration", "Voice-driven interfaces"] },
   { category: "Salesforce", items: ["Apex", "Lightning Web Components"] },
-  { category: "Design", items: ["Photoshop", "Illustrator", "InDesign", "Premiere Pro", "Figma", "Canva"] },
+  {
+    category: "Design",
+    items: [
+      "Photoshop",
+      "Illustrator",
+      "InDesign",
+      "Premiere Pro",
+      "Figma",
+      "Canva",
+    ],
+  },
 ];
 
-export const stackCount = techStack.reduce((sum, group) => sum + group.items.length, 0);
+export const stackCount = techStack.reduce(
+  (sum, group) => sum + group.items.length,
+  0,
+);
 
 export const projects = [
   {
@@ -70,21 +86,22 @@ export type JourneyItem = {
 
 export const journey: JourneyItem[] = [
   {
-    period: "Jan 2020 — Feb 2023",
+    period: "Jan 2020 - Feb 2023",
     title: "Studied Mathematics",
     place: "Methodist Central College",
     detail: "Completed secondary education with a focus on Mathematics.",
     kind: "education",
   },
   {
-    period: "Nov 2024 — 2028 (expected)",
+    period: "Nov 2024 - 2028 (expected)",
     title: "B.Sc. Computer Science",
     place: "University of Jaffna",
-    detail: "Undergraduate degree focused on programming, systems, and applied problem-solving.",
+    detail:
+      "Undergraduate degree focused on programming, systems, and applied problem-solving.",
     kind: "education",
   },
   {
-    period: "Dec 2025 — Present",
+    period: "Dec 2025 - Present",
     title: "Advertisement & News Support Assistant (Part-time)",
     place: "Thinakkural Newspaper, Jaffna",
     detail:
@@ -100,29 +117,59 @@ export type Credential = {
 };
 
 export const credentials: Credential[] = [
-  { title: "Java (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/iframe/ee518ca7fd75" },
-  { title: "JavaScript (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/iframe/780c5743c20f" },
-  { title: "CSS (Basic)", issuer: "HackerRank", link: "https://www.hackerrank.com/certificates/iframe/4d4296ca4b46" },
+  {
+    title: "Java (Basic)",
+    issuer: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/iframe/ee518ca7fd75",
+  },
+  {
+    title: "JavaScript (Basic)",
+    issuer: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/iframe/780c5743c20f",
+  },
+  {
+    title: "CSS (Basic)",
+    issuer: "HackerRank",
+    link: "https://www.hackerrank.com/certificates/iframe/4d4296ca4b46",
+  },
   { title: "Google AI Certificate", issuer: "Google" },
   { title: "Apex & LWC Bootcamp — Cohort 01", issuer: "Copado" },
   { title: "Copado AI Certified", issuer: "Copado" },
   { title: "Ideas to Impact — Entrepreneurship Program", issuer: "" },
-  { title: "Future Fest Aurudu — AI Image Generation Competition (Participant)", issuer: "" },
-  { title: "UoJ Coders v5.0 — Certificate of Appreciation", issuer: "University of Jaffna" },
+  {
+    title: "Future Fest Aurudu — AI Image Generation Competition (Participant)",
+    issuer: "",
+  },
+  {
+    title: "UoJ Coders v5.0 — Certificate of Appreciation",
+    issuer: "University of Jaffna",
+  },
   { title: "YARLINSIGHT 3.0 — Summer School", issuer: "" },
   { title: "Leadership and Positive Attitude", issuer: "" },
 ];
 
 export const elsewhere = [
   { label: "GitHub", url: "https://github.com/sivarajapratheep175" },
-  { label: "LinkedIn", url: "https://www.linkedin.com/in/sivarajapratheep175/" },
-  { label: "HackerRank", url: "https://www.hackerrank.com/profile/pratheep175" },
-  { label: "Trailblazer", url: "https://www.salesforce.com/trailblazer/sivarajapratheep175" },
+  {
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/sivarajapratheep175/",
+  },
+  {
+    label: "HackerRank",
+    url: "https://www.hackerrank.com/profile/pratheep175",
+  },
+  {
+    label: "Trailblazer",
+    url: "https://www.salesforce.com/trailblazer/sivarajapratheep175",
+  },
   { label: "X / Twitter", url: "https://x.com/pratheep175" },
   { label: "Facebook", url: "https://www.facebook.com/pratheep.sivarajaa" },
   { label: "Threads", url: "https://www.threads.com/@sivarajapratheep175" },
   { label: "Bluesky", url: "https://bsky.app/profile/pratheep175.bsky.social" },
   { label: "Instagram", url: "https://www.instagram.com/sivarajapratheep175/" },
-  { label: "Telegram", url: "https://web.telegram.org/k/#@sivarajapratheep175" },
+  {
+    label: "Telegram",
+    url: "https://web.telegram.org/k/#@sivarajapratheep175",
+  },
   { label: "YouTube", url: "https://www.youtube.com/@edit_tune" },
 ];
