@@ -1,0 +1,288 @@
+.skills-section {
+  border-bottom: 1px solid var(--line);
+}
+
+.skills-section .section-description {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 104px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  color: var(--text);
+  background: var(--surface);
+  text-align: left;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition),
+    box-shadow var(--transition);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgb(96 165 250 / 48%);
+  background: var(--surface-hover);
+  box-shadow: var(--shadow-card);
+}
+
+.skill-icon-wrap {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  place-items: center;
+  border: 1px solid rgb(96 165 250 / 18%);
+  border-radius: 15px;
+  color: var(--accent);
+  background:
+    radial-gradient(circle at 50% 0%, rgb(96 165 250 / 13%), transparent 75%),
+    var(--accent-soft);
+}
+
+.skill-icon {
+  display: block;
+  width: 27px;
+  height: 27px;
+}
+
+.skill-icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.skill-icon-js {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: end;
+  border-radius: 5px;
+  color: #0b1220;
+  background: var(--accent);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.skill-copy {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-name {
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.skill-category {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.skill-card-arrow {
+  align-self: flex-start;
+  color: var(--muted);
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translate(-3px, 3px);
+  transition:
+    opacity var(--transition),
+    transform var(--transition),
+    color var(--transition);
+}
+
+.skill-card:hover .skill-card-arrow {
+  color: var(--accent);
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.design-tools {
+  margin-top: 34px;
+}
+
+.design-tools-label {
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.design-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.design-tools-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 6px 13px 6px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--surface);
+  font-size: 0.88rem;
+  transition:
+    color var(--transition),
+    border-color var(--transition),
+    background var(--transition),
+    transform var(--transition);
+}
+
+.design-tools-list li:hover {
+  transform: translateY(-2px);
+  border-color: rgb(96 165 250 / 42%);
+  background: var(--surface-hover);
+}
+
+.design-tool-logo {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.design-tool-logo-photoshop {
+  color: #63c9ff;
+  background: #071e35;
+}
+
+.design-tool-logo-illustrator {
+  color: #ffad68;
+  background: #321709;
+}
+
+.design-tool-logo-indesign {
+  color: #ff82ae;
+  background: #350b20;
+}
+
+.design-tool-logo-premiere {
+  color: #c4a3ff;
+  background: #1e123b;
+}
+
+.design-tool-logo-blender {
+  color: #ff9b45;
+  background: #302013;
+  font-size: 1.05rem;
+}
+
+.design-tool-logo-davinci {
+  color: #eee4cb;
+  background:
+    conic-gradient(
+      from 20deg,
+      #dca94b 0deg 60deg,
+      #d85e48 60deg 120deg,
+      #ba4e75 120deg 180deg,
+      #7963a8 180deg 240deg,
+      #4d91a6 240deg 300deg,
+      #8aa44f 300deg 360deg
+    );
+  border-color: rgb(255 255 255 / 35%);
+  text-shadow: 0 1px 4px rgb(0 0 0 / 65%);
+}
+
+.design-tool-logo-canva {
+  border-radius: 50%;
+  color: #8fe7dd;
+  background: #092b35;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.design-tool-logo-figma {
+  grid-template-columns: repeat(2, 7px);
+  grid-template-rows: repeat(3, 7px);
+  align-content: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.design-tool-logo-figma span {
+  width: 7px;
+  height: 7px;
+}
+
+.design-tool-logo-figma span:nth-child(1) {
+  border-radius: 5px 0 0 5px;
+  background: #f46a5f;
+}
+
+.design-tool-logo-figma span:nth-child(2) {
+  border-radius: 0 5px 5px 0;
+  background: #ff8a63;
+}
+
+.design-tool-logo-figma span:nth-child(3) {
+  border-radius: 5px 0 0 5px;
+  background: #a259ff;
+}
+
+.design-tool-logo-figma span:nth-child(4) {
+  border-radius: 50%;
+  background: #1abcfe;
+}
+
+.design-tool-logo-figma span:nth-child(5) {
+  grid-column: 1;
+  border-radius: 5px 0 5px 5px;
+  background: #0acf83;
+}
+
+@media (max-width: 760px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skill-card {
+    min-height: 96px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card-arrow {
+    color: var(--accent);
+    opacity: 1;
+    transform: none;
+  }
+}
