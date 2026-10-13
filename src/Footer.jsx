@@ -1,4 +1,4 @@
-import ZorvexLogo from "./Zorvex.";
+import ZorvexLogo from "./ZorvexLogo";
 
 function Footer() {
   return (
