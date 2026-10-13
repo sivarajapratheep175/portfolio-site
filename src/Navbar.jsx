@@ -1,9 +1,9 @@
+import ZorvexLogo from "./ZorvexLogo";
+
 function Navbar() {
   return (
     <nav className="navbar">
-      <a className="logo" href="#home">
-        SP<span>.</span>
-      </a>
+      <ZorvexLogo />
 
       <div className="navbar-right">
         <div className="nav-links">

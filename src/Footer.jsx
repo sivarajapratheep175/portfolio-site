@@ -1,11 +1,13 @@
+import ZorvexLogo from "./Zorvex.";
+
 function Footer() {
   return (
     <footer className="footer">
-      <a className="logo" href="#home">
-        SP<span>.</span>
-      </a>
-      <p>Designed and built with React.</p>
-      <p>© {new Date().getFullYear()} Sivaraja Pratheep</p>
+      <ZorvexLogo className="footer-brand" />
+      <div className="footer-meta">
+        <p>Designed &amp; built with purpose.</p>
+        <p>© {new Date().getFullYear()} ZORVEX · Sivaraja Pratheep</p>
+      </div>
     </footer>
   );
 }
