@@ -1,3 +1,4 @@
+import "./ZorvexLogo.css";
 import zorvexLogo from "./assets/Zorvex.svg";
 
 function ZorvexLogo({ className = "" }) {
