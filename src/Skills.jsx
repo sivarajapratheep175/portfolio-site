@@ -11,17 +11,20 @@ const designTools = [
   { name: "Photoshop", mark: "Ps", brand: "photoshop" },
   { name: "Illustrator", mark: "Ai", brand: "illustrator" },
   { name: "InDesign", mark: "Id", brand: "indesign" },
-  { name: "Premiere Pro", mark: "Pr", brand: "premiere" },
+  { name: "DaVinci Resolve", mark: "DR", brand: "davinci" },
+  { name: "Blender", mark: "B", brand: "blender" },
+  // { name: "Premiere Pro", mark: "Pr", brand: "premiere" },
   { name: "Figma", mark: "figma", brand: "figma" },
   { name: "Canva", mark: "C", brand: "canva" },
-  { name: "Blender", mark: "B", brand: "blender" },
-  { name: "DaVinci Resolve", mark: "DR", brand: "davinci" },
 ];
 
 function DesignToolLogo({ tool }) {
   if (tool.brand === "figma") {
     return (
-      <span className="design-tool-logo design-tool-logo-figma" aria-hidden="true">
+      <span
+        className="design-tool-logo design-tool-logo-figma"
+        aria-hidden="true"
+      >
         <span />
         <span />
         <span />
@@ -53,8 +56,20 @@ function SkillIcon({ type }) {
     react: (
       <>
         <ellipse cx="12" cy="12" rx="10" ry="4.2" />
-        <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)" />
-        <ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(120 12 12)" />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="10"
+          ry="4.2"
+          transform="rotate(60 12 12)"
+        />
+        <ellipse
+          cx="12"
+          cy="12"
+          rx="10"
+          ry="4.2"
+          transform="rotate(120 12 12)"
+        />
         <circle cx="12" cy="12" r="1.4" className="skill-icon-fill" />
       </>
     ),
