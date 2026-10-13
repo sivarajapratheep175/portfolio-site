@@ -1,3 +1,5 @@
+import "./Skills.css";
+
 const skills = [
   { name: "Java", category: "Programming language", icon: "java" },
   { name: "JavaScript", category: "Programming language", icon: "javascript" },

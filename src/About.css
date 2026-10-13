@@ -1,0 +1,34 @@
+.about-section {
+  max-width: none;
+  padding-right: max(28px, calc((100% - 1104px) / 2));
+  padding-left: max(28px, calc((100% - 1104px) / 2));
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  background:
+    linear-gradient(90deg,
+      transparent 49.95%,
+      rgb(255 255 255 / 2%) 50%,
+      transparent 50.05%),
+    var(--surface);
+}
+
+.about-section .section-description {
+  margin-bottom: 0;
+}
+@media (max-width: 760px) {
+
+  .about-section {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .about-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

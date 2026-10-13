@@ -1,3 +1,4 @@
+import "./Navbar.css";
 import ZorvexLogo from "./ZorvexLogo";
 
 function Navbar() {

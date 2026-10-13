@@ -1,3 +1,4 @@
+import "./Footer.css";
 import ZorvexLogo from "./ZorvexLogo";
 
 function Footer() {

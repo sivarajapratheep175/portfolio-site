@@ -1,0 +1,22 @@
+.contact-section {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+  border-top: 1px solid var(--line);
+}
+
+.contact-section .button {
+  margin-top: 18px;
+}
+
+.contact-note {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 380px) {
+
+  .contact-section .button {
+    width: 100%;
+  }
+}

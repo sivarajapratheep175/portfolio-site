@@ -1,4 +1,26 @@
+import "./Projects.css";
+
 const projects = [
+  {
+    title: "GasGuard_IoT",
+    category: "IOT · SAFETY",
+    description:
+      "An IoT-based smart gas leak detection and automated power cutoff system designed to enhance safety and prevent hazards.",
+    technologies: ["IoT", "Embedded Systems", "Hardware Integration"],
+    visual: "gas",
+    link: "https://github.com/sivarajapratheep175/GasGuard_IoT",
+    linkText: "View on GitHub",
+  },
+  {
+    title: "Campus Marketplace",
+    category: "WEB · MARKETPLACE",
+    description:
+      "A campus-focused marketplace for students to discover and exchange items within their college community.",
+    technologies: ["React", "TypeScript", "Firebase"],
+    visual: "marketplace",
+    link: "https://github.com/sivarajapratheep175/campus-marketplace-enhanced-main",
+    linkText: "View on GitHub",
+  },
   {
     title: "FarmIntel AI",
     category: "AI · AGRICULTURE",
@@ -42,6 +64,94 @@ const projects = [
 ];
 
 function ProjectArtwork({ visual }) {
+  if (visual === "marketplace") {
+    return (
+      <div className="marketplace-artwork">
+        <div className="marketplace-topbar">
+          <span className="marketplace-logo">
+            <span className="marketplace-logo-mark">C</span>
+            campus<span>market</span>
+          </span>
+          <span className="marketplace-search">⌕ &nbsp; Find something...</span>
+          <span className="marketplace-avatar">SP</span>
+        </div>
+        <div className="marketplace-heading">
+          <span>YOUR CAMPUS, YOUR MARKET</span>
+          <strong>Find your next great find.</strong>
+        </div>
+        <div className="marketplace-items">
+          <div className="marketplace-item marketplace-item-book">
+            <span className="marketplace-item-art">Aa</span>
+            <span className="marketplace-item-copy">
+              <strong>Study essentials</strong>
+              <small>Textbooks &amp; notes</small>
+            </span>
+            <b>$12</b>
+          </div>
+          <div className="marketplace-item marketplace-item-headphones">
+            <span className="marketplace-item-art">♫</span>
+            <span className="marketplace-item-copy">
+              <strong>Wireless headphones</strong>
+              <small>Electronics</small>
+            </span>
+            <b>$28</b>
+          </div>
+          <div className="marketplace-item marketplace-item-lamp">
+            <span className="marketplace-item-art">✳</span>
+            <span className="marketplace-item-copy">
+              <strong>Desk lamp</strong>
+              <small>Room &amp; living</small>
+            </span>
+            <b>$16</b>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (visual === "gas") {
+    return (
+      <div className="gas-monitor">
+        <div className="gas-monitor-header">
+          <span className="gas-monitor-brand">
+            <span className="gas-monitor-mark">G</span>
+            GASGUARD
+          </span>
+          <span className="gas-monitor-status">
+            <span />
+            SYSTEM ONLINE
+          </span>
+        </div>
+        <div className="gas-display">
+          <div className="gas-display-copy">
+            <span className="gas-reading-label">GAS LEVEL</span>
+            <strong>0.04 <small>%</small></strong>
+            <span className="gas-reading-safe">SAFE · NORMAL RANGE</span>
+          </div>
+          <div className="shield" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+        </div>
+        <div className="gas-monitor-footer">
+          <span>LIVE SENSOR</span>
+          <span className="gas-sensor-bars" aria-hidden="true">
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
+            <i />
+          </span>
+          <span>POWER CUT-OFF READY</span>
+        </div>
+      </div>
+    );
+  }
   if (visual === "farm") {
     return (
       <div className="artwork-dashboard">
@@ -55,7 +165,11 @@ function ProjectArtwork({ visual }) {
         <div className="farm-dashboard-body">
           <div className="farm-dashboard-copy">
             <span className="artwork-overline">FIELD OVERVIEW</span>
-            <strong>Grow with<br />confidence.</strong>
+            <strong>
+              Grow with
+              <br />
+              confidence.
+            </strong>
             <span>AI crop health monitoring</span>
           </div>
           <div className="farm-health">
@@ -90,7 +204,7 @@ function ProjectArtwork({ visual }) {
         <div className="phone-screen">
           <div className="phone-status">
             <span>9:41</span>
-            <span>●●●  ▰</span>
+            <span>●●● ▰</span>
           </div>
           <div className="walk-map">
             <span className="map-road map-road-one" />
@@ -111,7 +225,9 @@ function ProjectArtwork({ visual }) {
               <strong>You&apos;re safe</strong>
               <small>Route monitored</small>
             </span>
-            <span className="walk-shield" aria-hidden="true">✓</span>
+            <span className="walk-shield" aria-hidden="true">
+              ✓
+            </span>
           </div>
         </div>
       </div>
@@ -125,10 +241,16 @@ function ProjectArtwork({ visual }) {
         <strong>sivarajapratheep175</strong>
         <span className="profile-caption">Developer · Designer · Creator</span>
         <div className="profile-link-row">
-          <span><b>in</b> LinkedIn</span>
-          <span><b>⌘</b> GitHub</span>
+          <span>
+            <b>in</b> LinkedIn
+          </span>
+          <span>
+            <b>⌘</b> GitHub
+          </span>
         </div>
-        <span className="profile-link-button">Explore my links <span>↗</span></span>
+        <span className="profile-link-button">
+          Explore my links <span>↗</span>
+        </span>
       </div>
     );
   }
@@ -136,16 +258,31 @@ function ProjectArtwork({ visual }) {
   return (
     <div className="artwork-design">
       <div className="design-poster design-poster-one">
-        <span>CREATIVE<br />DIRECTION</span>
-        <strong>FORM<br />& COLOR</strong>
+        <span>
+          CREATIVE
+          <br />
+          DIRECTION
+        </span>
+        <strong>
+          FORM
+          <br />& COLOR
+        </strong>
         <i />
       </div>
       <div className="design-poster design-poster-two">
         <i />
-        <span>STUDIO<br />NOTES — 24</span>
+        <span>
+          STUDIO
+          <br />
+          NOTES — 24
+        </span>
       </div>
       <div className="design-poster design-poster-three">
-        <span>TYPE<br />STUDY</span>
+        <span>
+          TYPE
+          <br />
+          STUDY
+        </span>
         <strong>Aa</strong>
       </div>
     </div>

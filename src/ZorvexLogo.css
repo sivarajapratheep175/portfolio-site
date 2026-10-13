@@ -1,0 +1,23 @@
+.zorvex-brand {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.zorvex-image {
+  position: absolute;
+  top: -20px;
+  left: -23px;
+  width: 94px;
+  max-width: none;
+  height: 94px;
+  mix-blend-mode: screen;
+  transition: filter var(--transition);
+}
